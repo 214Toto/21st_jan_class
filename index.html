@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Library | ToToZ Collection</title>
+
+  <style>
+    :root {
+      --primary: #2b7a78;
+      --secondary: #afc4c4;
+      --accent: #3aafa9;
+      --dark: #17252a;
+      --light: #f8f9fa;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--light);
+      color: var(--dark);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .video-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .video-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    }
+
+    .video-title {
+      padding: 12px 15px;
+      background-color: var(--secondary);
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--dark);
+    }
+
+    .video-frame {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: none;
+    }
+  .pdf-btn {
+  display: block;
+  margin: 12px 15px 18px;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pdf-btn:hover {
+  background-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      text-align: center;
+      font-size: 0.85rem;
+      background-color: var(--dark);
+      color: var(--secondary);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1> Todays Lesson </h1>
+    <p> CBU-SOM | ToToZ Collection</p>
+  </header>
+
+  <main>
+    <div class="video-grid">
+
+      <!-- VIDEO 1 -->
+      <div class="video-card">
+  <div class="video-title">Renal Physiology – Introduction</div>
+
+  <iframe
+    class="video-frame"
+    src="https://drive.google.com/file/d/1lCO0aaXHQFxPXh-B6lNo5amCvwqUPMO9/preview"
+    allow="autoplay">
+  </iframe>
+
+  <a
+    class="pdf-btn"https://drive.google.com/file/d//view?usp=drivesdk
+    href="https://drive.google.com/file/d/125LKPX5LmDDOjpIkPLwkRsV8o_BH6pE9/view"
+    target="_blank">
+    Download Notes (PDF)
+  </a>
+</div>
+
+
+      <!-- VIDEO 2 -->
+      <div class="video-card">
+        <div class="video-title">Cardiac Cycle Explained</div>
+        <iframe
+          class="video-frame"
+          src="https://drive.google.com/file/d/FILE_ID_2/preview"
+          allow="autoplay">
+        </iframe>
+      </div>
+
+      <!-- VIDEO 3 -->
+      <div class="video-card">
+        <div class="video-title">Histology – Basic Techniques</div>
+        <iframe
+          class="video-frame"
+          src="https://drive.google.com/file/d/FILE_ID_3/preview"
+          allow="autoplay">
+        </iframe>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    © 2026 ToToZ Collection | Medical Education Platform
+  </footer>
+
+</body>
+</html>
